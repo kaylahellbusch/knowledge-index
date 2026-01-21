@@ -21,6 +21,30 @@ The repository is currently in its initial setup phase. As the project evolves, 
 
 ## Development Workflow
 
+### Jira Integration
+
+**IMPORTANT**: All pull requests must be linked to a Jira issue.
+
+When creating branches, commits, and pull requests:
+
+1. **Branch naming**: Include the Jira issue key in your branch name
+   - Format: `<issue-key>-brief-description` or `<type>/<issue-key>-brief-description`
+   - Example: `PROJ-123-add-rag-pipeline` or `feature/PROJ-123-add-rag-pipeline`
+
+2. **Commit messages**: Include the Jira issue key in commit messages
+   - Format: `<ISSUE-KEY>: Commit message`
+   - Example: `PROJ-123: Implement vector embedding generation`
+
+3. **Pull request titles**: Include the Jira issue key at the beginning
+   - Format: `<ISSUE-KEY>: PR title`
+   - Example: `PROJ-123: Add RAG pipeline implementation`
+
+4. **Pull request descriptions**: Reference the Jira issue
+   - Include a link to the Jira issue in the PR description
+   - Use the format: `Jira: <ISSUE-KEY>` or include the full URL
+
+This ensures proper tracking and integration between code changes and Jira work items.
+
 ### Getting Started
 
 Since this is a new repository, there are no build or test commands yet. When working on this repository:
